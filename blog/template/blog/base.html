@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Blog{% endblock %}</title>
+</head>
+<body>
+{% load static %}
+<p><a href="{% url 'blog:blog_list' %}">blog_list</a></p>
+{% block content %}
+{% endblock %}
+</body>
+</html>

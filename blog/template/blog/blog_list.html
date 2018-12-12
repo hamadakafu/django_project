@@ -1,0 +1,10 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+{% block content %}
+    <p>im blog list</p>
+    {% for blog in all_blog %}
+        <p><a href="{% url 'blog:blog_info' blog.id %}">{{ blog }}</a></p>
+    {% endfor %}
+    <p><a href="{% url 'blog:blog_add' %}">blog add</a></p>
+    <img src="{% static 'blog/media/sample.png' %}">
+{% endblock %}

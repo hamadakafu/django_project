@@ -1,0 +1,9 @@
+{% extends 'blog/base.html' %}
+{% block content %}
+    {% load static %}
+    <p>im blog_info</p>
+    <h2>{{ blog.title }}</h2>
+    <p>{{ blog.content }}</p>
+    <p><a href="{% url 'blog:blog_mod' blog.id %}">modify</a></p>
+    <p><a href="{% url 'blog:blog_del' blog.id %}" onclick="return confirm('Can I delete it?')">delete</a></p>
+{% endblock %}
