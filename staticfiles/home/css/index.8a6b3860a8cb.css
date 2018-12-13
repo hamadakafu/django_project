@@ -1,0 +1,35 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+}
+
+.banner-wrapper {
+    z-index: 4;
+    transition: all 300ms ease-in-out;
+    position: fixed;
+    width: 100%;
+}
+
+.banner {
+    height: 77px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: rgba(162, 197, 35, 0.5);
+    transition: all 300ms ease-in-out;
+    float: left;
+}
+
+.content {
+    float: left;
+    background: url(https://unsplash.it/1400/1400?image=699) center no-repeat;
+    background-size: cover;
+    padding-top: 100%;
+}
